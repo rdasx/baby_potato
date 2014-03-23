@@ -32,11 +32,11 @@ LIBS:valves
 LIBS:potato-cache
 EELAYER 27 0
 EELAYER END
-$Descr USLetter 11000 8500
+$Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "23 mar 2014"
+Date "7 sep 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -80,12 +80,12 @@ $EndComp
 $Comp
 L CONN_2 P3
 U 1 1 522AA323
-P 6850 3500
-F 0 "P3" V 6800 3500 40  0000 C CNN
-F 1 "Power out" V 6900 3500 40  0000 C CNN
-F 2 "~" H 6850 3500 60  0000 C CNN
-F 3 "~" H 6850 3500 60  0000 C CNN
-	1    6850 3500
+P 6850 3400
+F 0 "P3" V 6800 3400 40  0000 C CNN
+F 1 "Power out" V 6900 3400 40  0000 C CNN
+F 2 "~" H 6850 3400 60  0000 C CNN
+F 3 "~" H 6850 3400 60  0000 C CNN
+	1    6850 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -157,23 +157,23 @@ $EndComp
 $Comp
 L GND #PWR4
 U 1 1 522AA40E
-P 5850 3850
-F 0 "#PWR4" H 5850 3850 30  0001 C CNN
-F 1 "GND" H 5850 3780 30  0001 C CNN
-F 2 "" H 5850 3850 60  0000 C CNN
-F 3 "" H 5850 3850 60  0000 C CNN
-	1    5850 3850
+P 6300 3850
+F 0 "#PWR4" H 6300 3850 30  0001 C CNN
+F 1 "GND" H 6300 3780 30  0001 C CNN
+F 2 "" H 6300 3850 60  0000 C CNN
+F 3 "" H 6300 3850 60  0000 C CNN
+	1    6300 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR5
 U 1 1 522AA482
-P 7050 3250
-F 0 "#PWR5" H 7050 3250 30  0001 C CNN
-F 1 "GND" H 7050 3180 30  0001 C CNN
-F 2 "" H 7050 3250 60  0000 C CNN
-F 3 "" H 7050 3250 60  0000 C CNN
-	1    7050 3250
+P 6650 2950
+F 0 "#PWR5" H 6650 2950 30  0001 C CNN
+F 1 "GND" H 6650 2880 30  0001 C CNN
+F 2 "" H 6650 2950 60  0000 C CNN
+F 3 "" H 6650 2950 60  0000 C CNN
+	1    6650 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -192,24 +192,18 @@ Wire Wire Line
 Wire Wire Line
 	3750 3700 4700 3700
 Wire Wire Line
-	3750 3300 4350 3300
-Wire Wire Line
-	4350 3300 4700 3300
-Wire Wire Line
-	4700 3300 5450 3300
+	3750 3300 5450 3300
 Wire Wire Line
 	4700 3700 4700 3850
 Wire Wire Line
-	5650 3300 5850 3300
+	5650 3300 6500 3300
 Wire Wire Line
-	5850 3300 6500 3300
+	6500 3500 6300 3500
 Wire Wire Line
-	5850 3700 5850 3700
+	6300 3500 6300 3850
 Wire Wire Line
-	5850 3700 6500 3700
-Wire Wire Line
-	5850 3700 5850 3850
-Connection ~ 5850 3700
+	6300 3700 5850 3700
+Connection ~ 6300 3700
 Wire Wire Line
 	5550 2550 5550 3650
 Wire Wire Line
@@ -217,9 +211,9 @@ Wire Wire Line
 Wire Wire Line
 	5750 2550 5750 2600
 Wire Wire Line
-	7050 3250 7050 3150
+	6650 2950 6650 2850
 Wire Wire Line
-	7050 3150 6450 3150
+	6650 2850 6450 2850
 Wire Wire Line
 	5350 2600 4750 2600
 Wire Wire Line
@@ -238,7 +232,9 @@ Connection ~ 4700 3300
 Wire Wire Line
 	5350 3150 5350 3100
 Wire Wire Line
-	5950 3150 5900 3150
+	5950 2850 5900 2850
+Wire Wire Line
+	5900 2850 5900 3150
 Wire Wire Line
 	5900 3150 5750 3150
 Wire Wire Line
@@ -248,28 +244,12 @@ Wire Wire Line
 $Comp
 L RVAR R3
 U 1 1 522AA303
-P 6200 3150
-F 0 "R3" V 6280 3100 50  0000 C CNN
-F 1 "200" V 6120 3210 50  0000 C CNN
-F 2 "~" H 6200 3150 60  0000 C CNN
-F 3 "~" H 6200 3150 60  0000 C CNN
-	1    6200 3150
+P 6200 2850
+F 0 "R3" V 6280 2800 50  0000 C CNN
+F 1 "200" V 6120 2910 50  0000 C CNN
+F 2 "~" H 6200 2850 60  0000 C CNN
+F 3 "~" H 6200 2850 60  0000 C CNN
+	1    6200 2850
 	0    -1   -1   0   
 $EndComp
-Text Notes 6750 2150 0    60   ~ 0
-For builds that do not require variable voltage\nsolder a jumper wire across POT terminals (R3 in schematic).\nOutput voltage will be set by R2. Assuming 1% tolerance:\nR2=220 ohm => Vout = 5.91-6.02\nR2=267 ohm => Vout = 4.97-5.06\nR2=330 ohm => Vout = 4.14-4.21\nR2=430 ohm => Vout = 3.31-3.37
-Wire Wire Line
-	6500 3300 6500 3400
-Wire Wire Line
-	6500 3700 6500 3600
-Text Notes 6640 7770 0    60   ~ 0
-Potato v2 Schematics, recreated from /u/slumberland 's schematics
-Text Notes 9970 7890 0    60   ~ 0
-0.1.a
-Text Notes 550  5700 0    60   ~ 0
-The Baby Potato PCB is a small backpack for, and approximately the same size as, the OKR-T6/10. \nIt is based on /u/slumberland 's Potato v2 schematics (recreated here) which is heavily influenced by \ndesigns/schematics from Mamu, The Goss, and others. Designed by a modder, for modders. \nDocumentation is intentionally sparse. While the board itself is inherently safe, \nthe batteries that one can attach to it are very much not. Misuse and Abuse can lead to the loss of a face. \nBe careful and direct questions to \nwww.reddit.com/r/openpv\n\nThe Baby Potato is available for purchase at OshPark\nhttp://oshpark.com/shared_projects/A80Nd2IR\n\nDesign files and Documentation are published on Github\nhttps://github.com/rdasx/baby_potato\n\nAll Components on the Baby Potato board are 1206 (SMT) Footprint.\nCapacitors are MLCC type at $0.40/ea and are optional but recommended. Don't be cheap.\nResistors are thick film type and $0.10/ea.\nConnect your own powersupply (12V or 2 series Li-ion cells), potentiometer (optional), momentary power switch, \npower connector (510), and OKR-T6/10 module.\n\nThis Project is released under the TAPR Open Hardware License.\nhttp://www.tapr.org/ohl\nIt is free for both commercial and hobby use.\nAttribution is requested, but not a required term of license.\nI, /u/Militancy, make absolutely no profit on the sale or use of these boards.\nNo support or warranty is expressed or implied.
-Text Notes 7200 7625 0    120  ~ 24
-Baby Potato
-Text Notes 9450 7650 0    60   ~ 0
-Drawn By: /u/Militancy
 $EndSCHEMATC

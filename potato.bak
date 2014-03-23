@@ -268,8 +268,6 @@ Text Notes 9970 7890 0    60   ~ 0
 0.1.a
 Text Notes 550  5700 0    60   ~ 0
 The Baby Potato PCB is a small backpack for, and approximately the same size as, the OKR-T6/10. \nIt is based on /u/slumberland 's Potato v2 schematics (recreated here) which is heavily influenced by \ndesigns/schematics from Mamu, The Goss, and others. Designed by a modder, for modders. \nDocumentation is intentionally sparse. While the board itself is inherently safe, \nthe batteries that one can attach to it are very much not. Misuse and Abuse can lead to the loss of a face. \nBe careful and direct questions to \nwww.reddit.com/r/openpv\n\nThe Baby Potato is available for purchase at OshPark\nhttp://oshpark.com/shared_projects/A80Nd2IR\n\nDesign files and Documentation are published on Github\nhttps://github.com/rdasx/baby_potato\n\nAll Components on the Baby Potato board are 1206 (SMT) Footprint.\nCapacitors are MLCC type at $0.40/ea and are optional but recommended. Don't be cheap.\nResistors are thick film type and $0.10/ea.\nConnect your own powersupply (12V or 2 series Li-ion cells), potentiometer (optional), momentary power switch, \npower connector (510), and OKR-T6/10 module.\n\nThis Project is released under the TAPR Open Hardware License.\nhttp://www.tapr.org/ohl\nIt is free for both commercial and hobby use.\nAttribution is requested, but not a required term of license.\nI, /u/Militancy, make absolutely no profit on the sale or use of these boards.\nNo support or warranty is expressed or implied.
-Text Notes 7200 7625 0    120  ~ 24
+Text Notes 9425 7625 0    120  ~ 24
 Baby Potato
-Text Notes 9450 7650 0    60   ~ 0
-Drawn By: /u/Militancy
 $EndSCHEMATC
