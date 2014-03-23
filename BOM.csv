@@ -1,4 +1,4 @@
-Quantity,Part Number,Description,Customer Reference,Available Quantity,Backorder Quantity,Unit Price,Extended Price
+Quantity,Digikey Part No,Description,Customer Reference,Available Quantity,Backorder Quantity,Unit Price,Extended Price
 2,399-3525-1-ND,CAP CER 10UF 16V 10% X7R 1206,"C1, C2","2
 Immediate",0,0.4,$0.80
 1,P5.1KECT-ND,RES 5.1K OHM 1/4W 5% 1206 SMD,R1,"1
